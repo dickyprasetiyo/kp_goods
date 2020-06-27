@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "f6a716c3-4418-4077-b1d0-1fd3523ad56d",
+		"name": "goods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SelectAll",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "70f2c38d-61d8-4203-b850-ec563dd16f38",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8484/goods",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"goods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SelectID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8484/goods/111111",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"goods",
+						"111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "111111",
+							"type": "text"
+						},
+						{
+							"key": "merchantID",
+							"value": "222222",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "Jeniper",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Singkatan dari Jeruk Nipis Peret adalah minuman khas kabupaten Kuningan",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Minuman",
+							"type": "text"
+						},
+						{
+							"key": "cancellable",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "checkAvail",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "IDR",
+							"type": "text"
+						},
+						{
+							"key": "priceStart",
+							"value": "10.529",
+							"type": "text"
+						},
+						{
+							"key": "priceEnd",
+							"value": "25.321",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "createdAt",
+							"value": "2020-06-21 09:17:32",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "Andi",
+							"type": "text"
+						},
+						{
+							"key": "modifiedAt",
+							"value": "2020-06-29 20:17:32",
+							"type": "text"
+						},
+						{
+							"key": "modifiedBy",
+							"value": "Budi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8484/goods",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"goods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "merchantID",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "Keripik",
+							"type": "text"
+						},
+						{
+							"key": "cancellable",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "checkAvail",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "priceStart",
+							"value": "15.213",
+							"type": "text"
+						},
+						{
+							"key": "priceEnd",
+							"value": "34.999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8484/goods/111111",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"goods",
+						"111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8484/goods/111111",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"goods",
+						"111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "111111",
+							"type": "text"
+						},
+						{
+							"key": "merchantID",
+							"value": "222222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8484/getgood",
+					"host": [
+						"localhost"
+					],
+					"port": "8484",
+					"path": [
+						"getgood"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
