@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "22bf46a6-dd93-4e8c-b811-7af0598fa961",
+		"name": "Task_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SuperPower",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"Molecule Man\",\r\n   \"age\":29,\r\n   \"secretIdentity\":\"Dan Jukes\",\r\n   \"powers\":{\r\n      \"Task1\":\"Radiation resistance\",\r\n      \"Task2\":\"Turning tiny\",\r\n      \"Task3\":\"Radiation blast\"\r\n   },\r\n   \"errors\":{\r\n      \"status\":\"422\",\r\n      \"source\":{\r\n         \"pointer\":\"/data/attributes/firstName\"\r\n      },\r\n      \"title\":\"Invalid Attribute\",\r\n      \"detail\":\"First name must contain at least three characters.\"\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/superPower",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"superPower"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Food",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":\"0001\",\r\n   \"type\":\"donut\",\r\n   \"name\":\"Cake\",\r\n   \"image\":{\r\n      \"url\":\"images/0001.jpg\",\r\n      \"width\":200,\r\n      \"height\":200\r\n   },\r\n   \"thumbnail\":{\r\n      \"url\":\"images/thumbnails/0001.jpg\",\r\n      \"width\":32,\r\n      \"height\":32\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/food",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"food"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
